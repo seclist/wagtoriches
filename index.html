@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Wags to Riches CIC | Dog Rehoming & Rescue in Surrey</title>
+    <meta name="description" content="Wags to Riches CIC is a Community Interest Company dedicated to finding local dogs their forever homes. Browse available dogs for adoption in Redhill, Surrey.">
+    <meta name="keywords" content="dog adoption, dog rehoming, rescue dogs, Surrey, Redhill, CIC, community interest company, dog rescue">
+    <meta name="author" content="Wags to Riches CIC">
+    <meta name="robots" content="index, follow">
+    
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wagstoriches.co.uk/">
+    <meta property="og:title" content="Wags to Riches CIC | Dog Rehoming & Rescue">
+    <meta property="og:description" content="A Community Interest Company dedicated to finding local dogs the 'Riches' of a forever home in Surrey.">
+    <meta property="og:image" content="https://wagstoriches.co.uk/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wags to Riches CIC | Dog Rehoming & Rescue">
+    <meta name="twitter:description" content="A Community Interest Company dedicated to finding local dogs their forever homes.">
+    <meta name="twitter:image" content="https://wagstoriches.co.uk/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --lavender-blush: #F2E3E3;
+            --old-lace: #F8EFDE;
+            --antique-white: #F8EDDA;
+            --lilac-ash: #A6939E;
+            --blackberry-cream: #511944;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+            margin: 0; 
+            color: var(--blackberry-cream); 
+            background-color: var(--old-lace); 
+            line-height: 1.8; 
+            font-size: 18px; /* Larger base font for accessibility */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        /* Navigation - Enhanced Professional Design */
+        header { 
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(10px);
+            padding: 18px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 2px solid var(--lavender-blush); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 20px rgba(81, 25, 68, 0.08);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-container:focus {
+            outline: 3px solid var(--lilac-ash);
+            outline-offset: 4px;
+            border-radius: 4px;
+        }
+
+        .logo-img {
+            height: 55px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .logo-area { 
+            font-weight: 700; 
+            font-size: 1.75rem; 
+            color: var(--blackberry-cream); 
+            letter-spacing: 0.3px; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo-area .cic { 
+            color: var(--lilac-ash); 
+            font-weight: 500; 
+            font-size: 0.85em; 
+            letter-spacing: 1px;
+        }
+
+        /* Hamburger Menu - Larger for Accessibility */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+            padding: 12px;
+            background: transparent;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: all 0.3s;
+            min-width: 48px;
+            min-height: 48px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hamburger:hover {
+            background: var(--lavender-blush);
+        }
+
+        .hamburger:focus {
+            outline: 3px solid var(--blackberry-cream);
+            outline-offset: 2px;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3.5px;
+            background: var(--blackberry-cream);
+            border-radius: 3px;
+            transition: 0.3s;
+            display: block;
+        }
+
+        .hamburger.active {
+            background: var(--lavender-blush);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(9px, 9px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+        
+        .nav-links { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            flex-wrap: wrap; 
+        }
+        
+        .nav-links a { 
+            text-decoration: none; 
+            color: var(--blackberry-cream); 
+            font-weight: 500; 
+            font-size: 1rem; 
+            padding: 12px 18px;
+            border-radius: 8px;
+            transition: all 0.3s; 
+            position: relative; 
+            display: inline-block;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links a:not(.btn):hover { 
+            color: var(--blackberry-cream);
+            background: var(--lavender-blush);
+        }
+
+        .nav-links a:not(.btn):focus {
+            outline: 3px solid var(--blackberry-cream);
+            outline-offset: 2px;
+        }
+        
+        .nav-links a.btn {
+            background: var(--blackberry-cream);
+            color: white;
+            padding: 12px 24px;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(81, 25, 68, 0.2);
+            margin-left: 8px;
+        }
+
+        .nav-links a.btn:hover {
+            background: var(--lilac-ash);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(81, 25, 68, 0.3);
+        }
+
+        .nav-links a.btn:focus {
+            outline: 3px solid var(--old-lace);
+            outline-offset: 2px;
+        }
+
+        /* Hero Section - Enhanced Modern Design with Dog Image */
+        .hero { 
+            background: var(--old-lace);
+            min-height: 650px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: flex-end; 
+            color: var(--blackberry-cream); 
+            text-align: right; 
+            padding: 100px 5%; 
+            position: relative;
+            border-bottom: 4px solid var(--lilac-ash);
+        }
+
+        .hero-dog-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 60%;
+            background-image: url('dog.png');
+            background-size: 135% auto;
+            background-position: left center;
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 45%;
+            background: linear-gradient(to left, rgba(248, 239, 222, 0.98) 0%, rgba(248, 239, 222, 0.85) 50%, transparent 100%);
+            z-index: 1;
+        }
+        
+        .hero-content { 
+            max-width: 550px; 
+            animation: fadeInUp 1s ease-out; 
+            position: relative;
+            z-index: 3;
+            text-align: right;
+            margin-right: 0;
+            margin-left: auto;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-badge { 
+            background: var(--blackberry-cream); 
+            color: var(--old-lace); 
+            padding: 12px 28px; 
+            font-weight: 600; 
+            border-radius: 50px; 
+            display: inline-block; 
+            margin-bottom: 30px; 
+            margin-left: auto;
+            margin-right: 0;
+            font-size: 1rem; 
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(81, 25, 68, 0.4), 0 2px 8px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+        }
+        
+        .hero h1 { 
+            font-size: clamp(2.8rem, 6vw, 4.5rem); 
+            margin-bottom: 25px; 
+            font-weight: 700; 
+            color: var(--blackberry-cream);
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(248, 239, 222, 0.9), 0 0 20px rgba(248, 239, 222, 0.6);
+        }
+        
+        .hero p { 
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem); 
+            max-width: 100%;
+            margin: 0 0 40px 0; 
+            margin-left: auto;
+            line-height: 1.9; 
+            color: var(--blackberry-cream);
+            font-weight: 500;
+            text-shadow: 1px 1px 6px rgba(248, 239, 222, 0.9), 0 0 15px rgba(248, 239, 222, 0.5);
+        }
+
+        .hero .btn {
+            font-size: 1.1rem;
+            padding: 18px 40px;
+            min-height: 60px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Sections */
+        .container { 
+            padding: 60px 5%; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                padding: 80px 5%;
+            }
+        }
+        
+        .section-alt { 
+            background: var(--lavender-blush); 
+            padding: 60px 5%; 
+        }
+
+        @media (min-width: 769px) {
+            .section-alt {
+                padding: 80px 5%;
+            }
+        }
+
+        /* Skip to Content Link - Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: var(--blackberry-cream);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 10000;
+            border-radius: 0 0 8px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        h2 { 
+            text-align: center; 
+            margin-bottom: 50px; 
+            font-size: clamp(2rem, 4vw, 2.8rem); 
+            position: relative; 
+            color: var(--blackberry-cream); 
+            font-weight: 700; 
+        }
+        
+        h2::after { 
+            content: ''; 
+            width: 80px; 
+            height: 4px; 
+            background: linear-gradient(90deg, var(--lilac-ash), var(--blackberry-cream)); 
+            display: block; 
+            margin: 20px auto; 
+            border-radius: 2px; 
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--antique-white);
+            padding: 15px 5%;
+            border-bottom: 1px solid var(--lavender-blush);
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumbs-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .breadcrumbs a {
+            color: var(--lilac-ash);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .breadcrumbs a:hover {
+            color: var(--blackberry-cream);
+            text-decoration: underline;
+        }
+        
+        .breadcrumbs span {
+            color: var(--lilac-ash);
+            margin: 0 8px;
+        }
+        
+        .breadcrumbs .current {
+            color: var(--blackberry-cream);
+            font-weight: 500;
+        }
+
+        /* Search and Filter */
+        .search-filter-container {
+            max-width: 900px;
+            margin: 0 auto 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(81, 25, 68, 0.1);
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .filter-select {
+            padding: 14px 24px;
+            border: 2px solid var(--lilac-ash);
+            border-radius: 8px;
+            background: white;
+            color: var(--blackberry-cream);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            flex: 1;
+            min-width: 150px;
+            min-height: 52px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--blackberry-cream);
+            box-shadow: 0 0 0 3px rgba(166, 147, 158, 0.3);
+        }
+
+        /* Dog Grid */
+        .dog-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 35px; 
+            justify-items: center;
+        }
+        
+        .dog-card { 
+            background: white; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            box-shadow: 0 8px 25px rgba(81, 25, 68, 0.12); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease; 
+            cursor: pointer; 
+            display: flex; 
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .dog-card:hover { 
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(81, 25, 68, 0.2); 
+        }
+        
+        .dog-img-container {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+        }
+        
+        .dog-img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.5s; 
+        }
+        
+        .dog-card:hover .dog-img {
+            transform: scale(1.1);
+        }
+        
+        .status-tag { 
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--old-lace); 
+            color: var(--blackberry-cream); 
+            padding: 6px 16px; 
+            border-radius: 25px; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .status-tag.reserved {
+            background: var(--lilac-ash);
+            color: white;
+        }
+        
+        .dog-info { 
+            padding: 25px; 
+            text-align: left; 
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .dog-info h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--blackberry-cream);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .dog-meta {
+            color: var(--lilac-ash);
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .dog-description {
+            color: var(--blackberry-cream);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        .dog-features {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .feature-tag {
+            background: var(--lavender-blush);
+            color: var(--blackberry-cream);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Staff Section */
+        .staff-section { 
+            background: var(--antique-white); 
+            padding: 60px 5%; 
+            text-align: center; 
+        }
+
+        @media (min-width: 769px) {
+            .staff-section {
+                padding: 80px 5%;
+            }
+        }
+        
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .staff-card { 
+            background: white; 
+            padding: 45px 35px; 
+            border-radius: 20px; 
+            box-shadow: 0 8px 25px rgba(81, 25, 68, 0.1); 
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--lavender-blush);
+            text-align: left;
+        }
+        
+        .staff-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(81, 25, 68, 0.15);
+            border-top-color: var(--lilac-ash);
+        }
+        
+        .staff-card h3 {
+            color: var(--blackberry-cream);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .staff-role {
+            color: var(--lilac-ash); 
+            font-weight: 600; 
+            margin-bottom: 20px; 
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .staff-bio {
+            color: var(--blackberry-cream);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .staff-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--lavender-blush), var(--lilac-ash));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: var(--blackberry-cream);
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Process Section - Enhanced Visual Flow */
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            .process-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            .process-grid::before {
+                content: '';
+                position: absolute;
+                top: 75px;
+                left: 10%;
+                right: 10%;
+                height: 3px;
+                background: linear-gradient(90deg, var(--lilac-ash), var(--blackberry-cream), var(--lilac-ash));
+                z-index: 0;
+                border-radius: 3px;
+            }
+        }
+        
+        .process-step {
+            background: white;
+            padding: 40px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(81, 25, 68, 0.12);
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .process-step:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(81, 25, 68, 0.2);
+            border-color: var(--lavender-blush);
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--blackberry-cream), var(--lilac-ash));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 15px rgba(81, 25, 68, 0.3);
+            position: relative;
+        }
+
+        .step-number::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 3px solid var(--lavender-blush);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .process-step:hover .step-number::after {
+            opacity: 1;
+        }
+        
+        .process-step h3 {
+            color: var(--blackberry-cream);
+            margin-bottom: 18px;
+            font-size: 1.4rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            min-height: 3.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .process-step p {
+            color: var(--blackberry-cream);
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 100%;
+        }
+
+        /* Action Buttons - Accessibility Enhanced */
+        .btn { 
+            background: var(--blackberry-cream); 
+            color: white; 
+            padding: 16px 36px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            display: inline-block; 
+            transition: all 0.3s; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 1.1rem;
+            letter-spacing: 0.3px;
+            box-shadow: 0 4px 15px rgba(81, 25, 68, 0.3);
+            font-family: 'Inter', sans-serif;
+            min-height: 50px;
+            min-width: 150px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn:hover { 
+            background: var(--lilac-ash); 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(81, 25, 68, 0.4);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--old-lace);
+            outline-offset: 3px;
+        }
+        
+        .btn-secondary { 
+            background: transparent; 
+            border: 2px solid var(--blackberry-cream); 
+            color: var(--blackberry-cream);
+            box-shadow: none;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--blackberry-cream);
+            color: white;
+        }
+
+        .btn-secondary:focus {
+            outline: 3px solid var(--blackberry-cream);
+            outline-offset: 3px;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--blackberry-cream);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(81, 25, 68, 0.3);
+            transition: all 0.3s;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: var(--lilac-ash);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(81, 25, 68, 0.4);
+        }
+
+        /* Footer */
+        footer { 
+            background: var(--blackberry-cream); 
+            color: white; 
+            padding: 60px 5% 30px; 
+            text-align: center; 
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        footer h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--old-lace);
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        footer p {
+            margin: 10px 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .social-link { 
+            color: var(--old-lace); 
+            text-decoration: none; 
+            font-size: 1.1rem; 
+            font-weight: 500;
+            transition: 0.3s;
+            display: inline-block;
+            margin: 15px 20px;
+        }
+        
+        .social-link:hover {
+            color: var(--lavender-blush);
+            transform: translateY(-2px);
+        }
+
+        .donate-btn {
+            margin: 25px 15px;
+        }
+        
+        footer hr {
+            border: 0; 
+            border-top: 1px solid rgba(255, 255, 255, 0.2); 
+            margin: 40px auto 20px; 
+            max-width: 800px;
+        }
+        
+        .copyright {
+            font-size: 0.85rem; 
+            opacity: 0.8; 
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 4%;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: stretch;
+                padding: 20px;
+                box-shadow: 0 5px 20px rgba(81, 25, 68, 0.1);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                gap: 0;
+            }
+
+            .nav-links.active {
+                transform: translateX(0);
+            }
+
+            .nav-links a {
+                padding: 18px 20px;
+                border-bottom: 1px solid var(--lavender-blush);
+                text-align: left;
+                font-size: 1.1rem;
+                min-height: 56px;
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+
+            .nav-links a.btn {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .hero {
+                min-height: 500px;
+                padding: 60px 20px;
+                justify-content: center;
+                text-align: center;
+                background-image: url('dog.png');
+                background-size: auto 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .hero-dog-image {
+                display: none;
+            }
+
+            .hero::after {
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(248, 239, 222, 0.3), rgba(248, 239, 222, 0.85));
+            }
+
+            .hero-content {
+                text-align: center;
+                max-width: 100%;
+                margin: 0;
+                z-index: 3;
+            }
+
+            .hero-badge {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 5vw, 3rem);
+                text-shadow: 2px 2px 10px rgba(248, 239, 222, 0.95), 0 0 25px rgba(248, 239, 222, 0.7);
+            }
+
+            .hero p {
+                margin-left: 0;
+                font-size: clamp(1rem, 2vw, 1.2rem);
+                text-shadow: 1px 1px 8px rgba(248, 239, 222, 0.95), 0 0 20px rgba(248, 239, 222, 0.6);
+            }
+
+            .hero-badge {
+                box-shadow: 0 4px 20px rgba(81, 25, 68, 0.5), 0 2px 10px rgba(0, 0, 0, 0.3);
+            }
+            
+            .container, .section-alt {
+                padding: 40px 4%;
+            }
+            
+            .dog-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .filter-group {
+                flex-direction: column;
+            }
+            
+            .search-filter-container {
+                padding: 20px;
+            }
+            
+            .breadcrumbs {
+                padding: 12px 4%;
+                font-size: 0.85rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 35px;
+            }
+
+            .process-grid::before {
+                display: none;
+            }
+
+            .process-step {
+                padding: 30px 20px;
+            }
+
+            .step-number {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-area {
+                font-size: 1.3rem;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .hero {
+                min-height: 450px;
+                padding: 40px 15px;
+            }
+
+            .hero-content {
+                padding: 0;
+            }
+
+            .hero .btn {
+                font-size: 1rem;
+                padding: 16px 32px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero {
+                min-height: 600px;
+                padding: 80px 4%;
+            }
+
+            .hero-dog-image {
+                width: 55%;
+            }
+
+            .hero-content {
+                max-width: 500px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .hero {
+                min-height: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <a href="index.html" class="logo-container" aria-label="Wags to Riches CIC Home">
+        <img src="logo.png" alt="Wags to Riches CIC Logo" class="logo-img">
+        <div class="logo-area">Wags to Riches <span class="cic">CIC</span></div>
+    </a>
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#dogs" aria-label="View available dogs">Available Dogs</a>
+        <a href="#process" aria-label="Learn about our adoption process">Adoption Process</a>
+        <a href="#about" aria-label="Learn about us">About Us</a>
+        <a href="#success" aria-label="Read success stories">Success Stories</a>
+        <a href="#contact" aria-label="Contact us">Contact</a>
+        <a href="#forms" class="btn" aria-label="Enquire about adoption">Enquire Now</a>
+    </nav>
+</header>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+    <div class="breadcrumbs-container">
+        <span class="current">Home</span>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-dog-image" aria-hidden="true"></div>
+    <div class="hero-content">
+        <span class="hero-badge">REHOMING & RESCUE</span>
+        <h1>From Wags to Riches</h1>
+        <p>A Community Interest Company dedicated to finding local dogs the "Riches" of a forever home.</p>
+        <a href="#dogs" class="btn" aria-label="Scroll to available dogs section">Meet Our Dogs</a>
+    </div>
+</section>
+
+<main id="main-content">
+<section class="container fade-in" id="dogs">
+    <h2>Dogs Looking for Their Forever Homes</h2>
+    
+    <div class="search-filter-container fade-in">
+        <div class="filter-group">
+            <select class="filter-select" id="filter-status" aria-label="Filter dogs by status">
+                <option value="all">All Status</option>
+                <option value="available">Available</option>
+                <option value="reserved">Reserved</option>
+            </select>
+            <select class="filter-select" id="filter-size" aria-label="Filter dogs by size">
+                <option value="all">All Sizes</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <select class="filter-select" id="filter-age" aria-label="Filter dogs by age">
+                <option value="all">All Ages</option>
+                <option value="puppy">Puppy (0-1 years)</option>
+                <option value="young">Young (1-3 years)</option>
+                <option value="adult">Adult (3-7 years)</option>
+                <option value="senior">Senior (7+ years)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="dog-grid">
+        <a href="buddy.html" class="dog-card fade-in" data-status="available" data-size="medium" data-age="young" aria-label="View Buddy's profile">
+            <div class="dog-img-container">
+                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=400" class="dog-img" alt="Buddy, a Spaniel Mix">
+                <span class="status-tag">AVAILABLE</span>
+            </div>
+            <div class="dog-info">
+                <h3>Buddy</h3>
+                <p class="dog-meta">Spaniel Mix • 3 Years Old • Medium Size</p>
+                <div class="dog-features">
+                    <span class="feature-tag">Active</span>
+                    <span class="feature-tag">Family Friendly</span>
+                    <span class="feature-tag">Good with Kids</span>
+                </div>
+                <p class="dog-description">Buddy is a spirited and energetic companion looking for an active family. He loves long walks, playtime in the garden, and cuddles on the sofa.</p>
+                <div class="btn btn-secondary">Learn More About Buddy</div>
+            </div>
+        </a>
+
+        <a href="bella.html" class="dog-card fade-in" data-status="reserved" data-size="large" data-age="adult" aria-label="View Bella's profile">
+            <div class="dog-img-container">
+                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?q=80&w=400" class="dog-img" alt="Bella, a Labrador">
+                <span class="status-tag reserved">RESERVED</span>
+        </div>
+            <div class="dog-info">
+                <h3>Bella</h3>
+                <p class="dog-meta">Labrador • 5 Years Old • Large Size</p>
+                <div class="dog-features">
+                    <span class="feature-tag">Gentle</span>
+                    <span class="feature-tag">Loves People</span>
+                    <span class="feature-tag">Good with Dogs</span>
+                </div>
+                <p class="dog-description">Bella is currently reserved but check back for updates soon! She's a gentle giant who loves everyone she meets.</p>
+                <div class="btn btn-secondary" style="opacity: 0.7;">View Profile</div>
+            </div>
+        </a>
+
+        <a href="charlie.html" class="dog-card fade-in" data-status="available" data-size="small" data-age="senior" aria-label="View Charlie's profile">
+            <div class="dog-img-container">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=400" class="dog-img" alt="Charlie, a Terrier Mix">
+                <span class="status-tag">AVAILABLE</span>
+            </div>
+            <div class="dog-info">
+                <h3>Charlie</h3>
+                <p class="dog-meta">Terrier Mix • 8 Years Old • Small Size</p>
+                <div class="dog-features">
+                    <span class="feature-tag">Calm</span>
+                    <span class="feature-tag">Senior</span>
+                    <span class="feature-tag">Apartment Friendly</span>
+                </div>
+                <p class="dog-description">Charlie is a sweet senior dog looking for a quiet, loving home. Perfect for someone who wants a calm companion.</p>
+                <div class="btn btn-secondary">Learn More About Charlie</div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="section-alt fade-in" id="process">
+    <div class="container">
+        <h2>Our Adoption Process</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem; color: var(--lilac-ash);">Our simple, straightforward process ensures the perfect match between you and your new furry family member. We're here to guide you every step of the way.</p>
+        <div class="process-container">
+            <div class="process-grid">
+                <div class="process-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Enquire</h3>
+                    <p>View our available dogs and complete an adoption enquiry form if you're interested in a particular dog.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Application Review</h3>
+                    <p>Our team reviews your application and matches your lifestyle with the dog's needs to ensure the perfect fit.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Meet & Greet</h3>
+                    <p>If it's a good match, we arrange a meeting so you can get to know the dog and ask any questions.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Home Visit</h3>
+                    <p>We conduct a home visit to ensure your environment is suitable and safe for the dog.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="step-number">5</div>
+                    <h3>Adoption</h3>
+                    <p>Once approved, we finalize the adoption and provide ongoing support as your new family member settles in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="staff-section fade-in" id="about">
+    <div class="container">
+        <h2>Our Team</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem; color: var(--lilac-ash);">Meet the passionate individuals dedicated to finding every dog their perfect forever home.</p>
+        <div class="staff-grid">
+            <div class="staff-card fade-in">
+                <div class="staff-icon">DT</div>
+                <h3>Dawn Topping</h3>
+                <p class="staff-role">Director & Rehoming Coordinator</p>
+                <p class="staff-bio">With over 15 years of experience in animal welfare, Dawn leads our CIC mission to ensure every dog transition is smooth, safe, and permanent. Her dedication to matching the right dog with the right family has helped hundreds of dogs find their forever homes. Dawn's compassionate approach and attention to detail make her an invaluable part of our team.</p>
+            </div>
+            
+            <div class="staff-card fade-in">
+                <div class="staff-icon">SM</div>
+                <h3>Sarah Mitchell</h3>
+                <p class="staff-role">Veterinary Liaison & Care Coordinator</p>
+                <p class="staff-bio">Sarah ensures all our dogs receive the highest standard of veterinary care and support. With a background in veterinary nursing, she coordinates health checks, vaccinations, and ongoing medical care for all dogs in our program. Sarah's expertise and caring nature ensure our dogs are healthy, happy, and ready for their new families.</p>
+            </div>
+            
+            <div class="staff-card fade-in">
+                <div class="staff-icon">JM</div>
+                <h3>James Morgan</h3>
+                <p class="staff-role">Adoption Support & Home Visit Coordinator</p>
+                <p class="staff-bio">James coordinates our home visits and provides ongoing support to families throughout the adoption process. His background in social work and genuine love for dogs helps him assess potential homes and provide guidance to new adopters. James ensures that every adoption is successful and that both dogs and families have the support they need.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-alt fade-in" id="success">
+    <div class="container">
+        <h2>Success Stories</h2>
+        <div class="dog-grid">
+            <div class="dog-card fade-in">
+                <div class="dog-img-container">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=400" class="dog-img" alt="Max with his adoptive family">
+                </div>
+                <div class="dog-info">
+                    <h3>Max & The Johnson Family</h3>
+                    <p class="dog-meta">Adopted 2023</p>
+                    <p class="dog-description">"Max has brought so much joy to our family. The adoption process was smooth, and the support from Wags to Riches has been incredible. We couldn't imagine life without him!"</p>
+                    <p style="color: var(--lilac-ash); font-style: italic;">— The Johnson Family</p>
+                </div>
+            </div>
+            <div class="dog-card fade-in">
+                <div class="dog-img-container">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=400" class="dog-img" alt="Luna in her new home">
+                </div>
+                <div class="dog-info">
+                    <h3>Luna's New Life</h3>
+                    <p class="dog-meta">Adopted 2024</p>
+                    <p class="dog-description">"Luna was the perfect match for our lifestyle. The team took the time to understand our needs and found us the most wonderful companion. Thank you, Wags to Riches!"</p>
+                    <p style="color: var(--lilac-ash); font-style: italic;">— Sarah & Tom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container fade-in" id="forms" style="text-align: center;">
+    <h2>Start Your Adoption Journey</h2>
+    <p style="max-width: 700px; margin: 0 auto 40px; font-size: 1.1rem; color: var(--lilac-ash);">Whether you're ready to adopt or just have a general question about our rescue process, we're here to help. Choose the option that best fits your needs.</p>
+    
+    <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
+        <a href="mailto:info@wagstoriches.co.uk?subject=Adoption%20Application&body=Hello,%20I%20would%20like%20to%20apply%20for%20adoption.%20Please%20let%20me%20know%20what%20information%20you%20need." class="btn" style="padding: 20px 45px; font-size: 1.1rem;" aria-label="Email us about adoption application">Adoption Application Form</a>
+        <a href="mailto:info@wagstoriches.co.uk?subject=General%20Enquiry&body=Hello,%20I%20have%20a%20question%20about%20Wags%20to%20Riches%20CIC." class="btn btn-secondary" style="padding: 20px 45px; font-size: 1.1rem;" aria-label="Email us with a general enquiry">General Enquiry Form</a>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="footer-content">
+    <h3>Wags to Riches CIC</h3>
+    <p>Redhill, Surrey | Registered CIC #16718282</p>
+        <p style="margin-top: 25px;">Follow us for daily updates and new arrivals:</p>
+        <a href="https://www.facebook.com/p/Wags-to-Riches-CIC-16718282-61578340210837/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">Facebook Page</a>
+        <div>
+            <a href="mailto:info@wagstoriches.co.uk?subject=Gift%20Aid%20Donation&body=Hello,%20I%20would%20like%20to%20make%20a%20donation%20to%20Wags%20to%20Riches%20CIC." class="btn donate-btn" aria-label="Contact us about Gift Aid donation">Gift Aid / Donate</a>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2024 Wags to Riches CIC. Supporting the local community, one wag at a time.</p>
+    </div>
+</footer>
+
+</main>
+
+<button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+<script>
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        const isExpanded = navLinks.classList.contains('active');
+        hamburger.setAttribute('aria-expanded', isExpanded);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    // Filter functionality
+    const filterStatus = document.getElementById('filter-status');
+    const filterSize = document.getElementById('filter-size');
+    const filterAge = document.getElementById('filter-age');
+    const dogCards = document.querySelectorAll('.dog-card');
+
+    function filterDogs() {
+        const statusValue = filterStatus.value;
+        const sizeValue = filterSize.value;
+        const ageValue = filterAge.value;
+
+        dogCards.forEach(card => {
+            const cardStatus = card.dataset.status;
+            const cardSize = card.dataset.size;
+            const cardAge = card.dataset.age;
+
+            const statusMatch = statusValue === 'all' || cardStatus === statusValue;
+            const sizeMatch = sizeValue === 'all' || cardSize === sizeValue;
+            const ageMatch = ageValue === 'all' || cardAge === ageValue;
+
+            if (statusMatch && sizeMatch && ageMatch) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    if (filterStatus) filterStatus.addEventListener('change', filterDogs);
+    if (filterSize) filterSize.addEventListener('change', filterDogs);
+    if (filterAge) filterAge.addEventListener('change', filterDogs);
+
+    // Fade-in on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Back to Top Button
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>
